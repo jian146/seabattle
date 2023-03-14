@@ -1,0 +1,535 @@
+.page {
+    background: url(~@/assets/images/card/cardPageBg.png) no-repeat center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+
+    .light {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation-name: light-keyframes;
+        animation-duration: 0.5s;
+        // animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: none;
+        z-index: -1;
+        @keyframes light-keyframes {
+            0% {
+                z-index: 10;
+                background-image: url(~@/assets/images/hero/animation/1.png);
+            }
+
+            12.5% {
+                z-index: 10;
+                background-image: url(~@/assets/images/hero/animation/2.png);
+            }
+
+            25% {
+                z-index: 10;
+                background-image: url(~@/assets/images/hero/animation/3.png);
+            }
+
+            37.5% {
+                z-index: 10;
+                background-image: url(~@/assets/images/hero/animation/4.png);
+            }
+
+            50% {
+                z-index: 10;
+                background-image: url(~@/assets/images/hero/animation/5.png);
+            }
+
+            62.5% {
+                z-index: 10;
+                background-image: url(~@/assets/images/hero/animation/6.png);
+            }
+
+            75% {
+                z-index: 10;
+                background-image: url(~@/assets/images/hero/animation/7.png);
+            }
+
+            87.5% {
+                z-index: 10;
+                background-image: url(~@/assets/images/hero/animation/8.png);
+            }
+
+            100% {
+                display: none;
+               
+            }
+        }
+
+    }
+
+    .backCardBox {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .backCard {
+            position: absolute;
+
+            width:304px;
+            transform-style: preserve-3d;
+            animation-fill-mode: forwards !important;
+        }
+
+        @keyframes end {
+            from {
+                //   transform: rotateY(0deg);
+
+            }
+
+            to {
+                transform: perspective(4000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                //   transform:  rotateY(360deg);
+            }
+        }
+
+        .back1 {
+            transform: perspective(4000px) rotateX(38deg) rotateY(237deg) rotateZ(20deg);
+            top: -240px;
+            left: -96px;
+            animation: end 1s 1 ease-in-out;
+
+        }
+
+        .back2 {
+            transform: perspective(4000px) rotateX(1deg) rotateY(50deg) rotateZ(38deg);
+            // transform: perspective(4000px) rotateX(38deg) rotateY(237deg) rotateZ(20deg);
+            top: -250px;
+            right: -300px;
+            animation: end 1s 1 linear;
+            // animation-fill-mode: forwards;
+        }
+
+        .back3 {
+            transform: perspective(4000px) rotateX(11deg) rotateY(315deg) rotateZ(41deg);
+            bottom: -600px;
+            right: 520px;
+            animation: end 1s 1 linear;
+            // animation: end 2s 1 ease-in-out;
+            // animation-fill-mode: forwards;
+        }
+
+        .back4 {
+            transform: perspective(4000px) rotateX(324deg) rotateY(242deg) rotateZ(328deg);
+            animation: end 1s 1 linear;
+            bottom: -800px;
+            right: 260px;
+            // animation: end 1s 1 ease-in-out;
+            // animation-fill-mode: forwards;
+        }
+
+        .back5 {
+            transform: perspective(4000px) rotateX(14deg) rotateY(61deg) rotateZ(18deg);
+            bottom: -630px;
+            right: -40px;
+            animation: end 1s 1 linear;
+            // animation: end 1s 1 ease-in-out;
+            // animation-fill-mode: forwards;
+        }
+
+        .back6 {
+            transform: perspective(4000px) rotateX(310deg) rotateY(318deg) rotateZ(304deg);
+            bottom: -800px;
+            right: -340px;
+            animation: end 1s 1 linear;
+            // animation: end 1s 1 ease-in-out;
+            // animation-fill-mode: forwards;
+        }
+    }
+
+    
+    @keyframes show-keyframes {
+        0% {
+            //   transform: rotateY(0deg);
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+    .heroBox {
+        opacity: 0;
+        animation-name: show-keyframes;
+        animation-duration: 0.25s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .heroBoxTen{
+        margin-top: 75px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .blancesBox {
+        position: absolute;
+        top: 18px;
+        right: 45px;
+    }
+
+    .countBox {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 408px;
+        height: 120px;
+        background: url(~@/assets/images/card/countBg.png) no-repeat center;
+        background-size: cover;
+        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+
+        .countValue {
+            font-size: 40px;
+            color: #FFD640;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .countLabel {
+            font-size: 20px;
+
+            color: #DDC6AB;
+        }
+
+        .progress {
+            width: 270px;
+            height: 6px;
+            background: #FF9E3A;
+            /* box-shadow: 0px 7px 0px 0px rgb(0 0 0 / 54%); */
+            margin-right: 10px;
+            display: flex;
+            justify-content: end;
+
+            .progressBar {
+                width: 0%;
+                height: 100%;
+                background: #877862;
+                // box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.21);
+            }
+        }
+    }
+
+    .bookImg {
+        width: 362px;
+        height: 358px;
+        position: absolute;
+        top: 209px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 10;
+        animation: book-keyframes 5s infinite ease-in-out;
+    }
+
+    .DrawHeroBox {
+        position: absolute;
+        top: 209px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        .backCardBox2 {
+            width: 100%;
+            height: 100%;
+            position: relative;
+    
+            .backCard{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                animation-name: tran, hide-keyframes;
+                animation-duration: 1s, 0.5s;
+                animation-timing-function: ease-in-out, linear;
+                animation-delay: 0s, 1s;
+                animation-iteration-count: 1, 1;
+                animation-fill-mode: forwards, forwards;
+            }
+    
+            @keyframes tran {
+                0% {
+                    //   transform: rotateY(0deg);
+                    transform: rotateY(0deg);
+                }
+    
+                to {
+                    // transform: perspective(4000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                    transform: rotateY(720deg);
+    
+                    //   transform:  rotateY(360deg);
+                }
+            }
+    
+            @keyframes hide-keyframes {
+                0% {
+                    //   transform: rotateY(0deg);
+                    opacity: 1;
+                }
+    
+                to {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+
+    @keyframes book-keyframes {
+        0% {
+            transform: translate(-50%, 0%);
+        }
+
+        50% {
+            transform: translate(-50%, 20%);
+        }
+
+        100% {
+            transform: translate(-50%, 0%);
+        }
+    }
+
+    @keyframes point0 {
+
+        // 0%{transform:translate(0,0) }
+        // 10%{transform:translate(100%,-100%) }
+        // 20%{transform:translate(150%,-200%) }
+        // 30%{transform:translate(200%,-300%) }
+        // 40%{transform:translate(240%,-400%) }
+        // 50%{transform:translate(300%,-500%) }
+        // 60%{transform:translate(360%,-600%) }
+        // 70%{transform:translate(400%,-700%) }
+        // 80%{transform:translate(430%,-800%) }
+        // 90%{transform:translate(500%,-900%) }
+        0% {
+            bottom: 0px;
+            left: 0px;
+        }
+
+        100% {
+            bottom: 500px;
+            left: 600px;
+        }
+
+    }
+
+    .pointBox {
+        position: absolute;
+        bottom: 180px;
+        width: 750px;
+        height: 450px;
+        background: rgba(255, 255, 255, 0.9);
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        display: none;
+
+        .flowerItem {
+            position: absolute;
+            bottom: 0px;
+            width: 10px;
+            height: 10px;
+            background-image: radial-gradient(#ffca2a 50%, #ffca2a);
+            box-shadow: 0 0px 10px 5px rgb(255 202 42 / 80%);
+            border-radius: 50%;
+            transform-style: preserve-3d;
+            // animation: point0 5s infinite ease-in-out;
+            /* opacity: 0.5; */
+            filter: blur(2px);
+
+        }
+
+        @keyframes rotate-flower {
+            from {
+                //   transform: rotateY(0deg);
+            }
+
+            to {
+                //   transform:  rotateY(360deg);
+            }
+        }
+    }
+
+
+    .topRow {
+        font-size: 60px;
+        color: #FFFFFF;
+        display: flex;
+
+        span {
+            margin-left: 24px;
+
+        }
+    }
+
+    .btnRow {
+        position: absolute;
+        left: 0;
+        // bottom: 7.5%;
+        bottom: calc(100vh/2 - 460px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        :global {
+            .comBtn {
+                padding: 14px 80px 24px;
+            }
+        }
+
+        .againBtn {
+            padding: 28px 50px 34px;
+            min-width: 252px;
+
+            &:first-of-type {
+                margin-right: 70px;
+            }
+
+            // width:252px;
+        }
+
+        .btnBox {
+            display: flex;
+            flex-direction: column;
+            font-size: 36px;
+            text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+            color: #DFFFFF;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+
+            .price {
+                font-size: 24px;
+                margin-right: 10px;
+
+            }
+        }
+
+    }
+
+    // 高分辨率电脑
+    @media screen and (min-width: 1950px) {
+        background-size: cover;
+    }
+    @media screen and (max-width: 1000px) {
+        background-size: cover;
+
+        .DrawHeroBoxTen{
+            transform: translate(-50%, -50%) scale(0.4);
+            position: absolute;
+            top: 48%;
+            left: 50%;
+        }
+        .blancesBox {
+            top: 0px;
+            right: 25px;
+        }
+        .backCardBox2{
+            .backCard{
+                width:188px;
+                top:30px;
+
+            }
+            @keyframes tran {
+                0% {
+                    //   transform: rotateY(0deg);
+                    transform: rotateY(0deg);
+                }
+    
+                to {
+                    // transform: perspective(4000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                    transform: rotateY(720deg);
+
+                    //   transform:  rotateY(360deg);
+                }
+            }
+            
+        }
+
+        .countBox {
+            transform: translate(-50%, -25%) scale(0.5);
+            top: 0px;
+        }
+
+        .topRow {
+            font-size: 26px;
+
+            span {
+                margin-left: 10px;
+            }
+        }
+
+        .DrawHeroBox {
+            top: 30px;
+            transform: translate(-50%, 0) scale(0.85);
+        }
+        
+
+        .bookImg {
+            width: 181px;
+            height: 179px;
+            top: 105px;
+            left: 50%;
+        }
+
+        .btnRow {
+            bottom: 10px;
+
+            :global {
+                .comBtn {
+                    padding: 7px 40px 12px;
+                }
+            }
+
+            .againBtn {
+                padding: 12px 25px 17px;
+                min-width: 126px;
+
+                &:first-of-type {
+                    margin-right: 35px;
+                }
+
+                // width:252px;
+            }
+
+            .btnBox {
+                display: flex;
+                flex-direction: column;
+                font-size: 18px;
+                text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+                color: #DFFFFF;
+                align-items: center;
+                justify-content: center;
+                line-height: 1;
+
+                .price {
+                    font-size: 12px;
+                    margin-right: 5px;
+
+                }
+            }
+        }
+    }
+}

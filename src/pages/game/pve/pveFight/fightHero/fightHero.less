@@ -1,0 +1,96 @@
+.fightHero {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 220px;
+
+    .hurtText {
+        font-size: 48px;
+        text-align: center;
+        min-height: 80px;
+        margin: 100px 0 0 0;
+        overflow: hidden;
+        @keyframes hurtmove
+        {
+          0% {
+               transform: translate(0,10px);
+               opacity: 1;
+        }
+          100% { transform: translate(0,-30px);
+            opacity: 0;}            
+        }
+        .miss {
+            color: #524ABD;
+            -webkit-text-stroke: 3px #FFFFFF;
+            animation-fill-mode: forwards !important;
+                        animation:hurtmove 2s 1 ease ;
+        }
+
+        .hurt {
+            color: #F2CE24;
+            background: linear-gradient(0deg, #FDDB92 0%, #D1FDFF 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation-fill-mode: forwards !important;
+                        animation:hurtmove 2s 1 ease ;
+        }
+    }
+
+    // .rotateY{
+    //     // transform: rotateY(180deg);
+    // }
+    .heroImg {
+        width: max-content;
+        height: 540px;
+    }
+    .rightHero{
+        // transform: rotateY(180deg);
+        margin-left: 75px;
+    }
+
+    .heroHead {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        margin-top: 60px;
+        .headImg {
+            width: 80px;
+            height: 80px;
+            margin:0 5px;
+          
+        }
+
+        .headName {
+            font-size: 30px;
+
+            font-weight: 400;
+            color: #F2CE24;
+        }
+
+        .hpMax {
+            width: 224px;
+            height: 24px;
+            background-color: rgba(0, 0, 0, 0.3);
+
+            .hp {
+                background: #4DD329;
+                // box-shadow: 0px 7px 0px 0px rgba(255, 255, 255, 0.54);
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .rightheroHead{
+        flex-direction: row-reverse;
+
+        .headName{
+            text-align: right;
+        }
+        .hpMax{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+}

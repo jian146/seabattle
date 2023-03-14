@@ -1,0 +1,102 @@
+.linkModel {
+    :global {
+
+        .ant-modal-mask {
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+        .ant-modal{
+            display: flex;
+            justify-content:center;
+        }
+
+    }
+    
+    .content {
+        background: url(~@/assets/images/com/linkModelBg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1145px;
+        height: 632px;
+        overflow: hidden;
+        padding: 61px 80px 0 0;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        @media screen and (max-width: 1000px) {
+            transform: scale(1.5);
+        }
+        .closeImg{
+            position: absolute;
+            right: 40px;
+            top: 26px;
+            cursor: pointer;
+
+        }
+        .main{
+            color: #884111;
+            line-height: 1;
+
+            width: fit-content;
+            .title{
+                font-size: 60px;
+                display: flex;
+                margin-bottom: 62px;   
+                line-height: 1;
+                align-items: flex-end; 
+                .shareTime{
+                    font-size: 42px;
+                }
+            }
+  
+            .pItem{        
+                line-height: 60px;    
+                font-size: 28px;
+                display: flex;
+            }
+            .linkBox{
+                border-radius: 6px;
+                background-color: rgb(214,190,172);
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding:24px 12px;
+                margin-top: 50px;
+                margin-bottom: 30px;
+                font-size: 24px;
+                .address{
+                    font-size:18px;
+                }
+                .copyImg{
+                    cursor: pointer;
+                    margin-left: 5px;
+                }
+
+            }
+            .rewardRow{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 22px;
+            }
+        }
+        .mainEn{
+            .title{
+                font-size: 42px;
+                .shareTime{
+                    font-size: 28px;
+                }
+            }
+            .pItem{        
+                line-height: 30px;    
+                font-size: 24px;
+                display: flex;
+                max-width: 550px;
+                margin:25px 0 45px 0;
+            }
+        }
+
+
+    }
+}

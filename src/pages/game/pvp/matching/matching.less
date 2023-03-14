@@ -1,0 +1,253 @@
+.page {
+    background: url(~@/assets/images/pvp/match/bg.png) no-repeat center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    :global {
+        .topRow {
+            position: absolute;
+        }
+    }
+
+    .content {
+
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 1;
+
+
+
+        .leftContent {
+            height: 100%;
+
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            .heroImg{
+                width:600px;
+                position: absolute;
+                left: 25px;
+                top: 150px;
+                z-index: 1;
+            }
+            .leftImg {
+                // width: 842px;
+                height: 100%;
+                margin-left: -20px;
+            }
+
+
+            .leftAttr {
+                width: 781px;
+                height: 252px;
+                background: url(~@/assets/images/pvp/match/leftAttr.png) no-repeat center;
+                background-size: cover;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                padding: 38px 0 0 37px;
+                z-index: 2;
+            }
+            .toatl{
+                margin-left: 80px;
+            }
+        }
+
+        .centerBox {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .centerTop {
+                width: 408px;
+                height: 120px;
+                background: url(~@/assets/images/pvp/match/centerTop.png) no-repeat center;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 48px;
+                color: #fff;
+            }
+
+            .vs {
+                font-size: 204px;
+                color: #FFFFFF;
+                line-height: 1;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 210px;
+
+                .v {
+                    margin-top: -150px;
+                    text-shadow: 0px 0px rgb(255, 223, 47),
+                        4px 4px rgb(6, 146, 233),
+                        4px 4px rgb(6, 146, 233),
+                        5px 5px rgb(255, 223, 47);
+                }
+
+                .s {
+                    text-shadow: 0px 0px rgb(255, 223, 47),
+                        4px 4px rgb(6, 146, 233),
+                        4px 4px rgb(6, 146, 233),
+                        5px 5px rgb(255, 223, 47);
+                }
+            }
+
+            .match {
+                font-size: 48px;
+                line-height: 1;
+                color: #fff;
+                margin: 110px 0 155px 0;
+            }
+
+            :global {
+                .comBtn {
+                    display: inline-block;
+                    width: max-content;
+                    height: max-content;
+                    padding: 24px 40px 28px;
+                    line-height: 1;
+                    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+
+
+        .rightContent {
+            height: 100%;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            .heroImg{
+                width:600px;
+                position: absolute;
+                right: 25px;
+                top: 150px;
+                z-index: 1;
+                transform: rotateY(180deg)
+            }
+
+            .rightImg {
+                // width: 842px;
+                height: 100%;
+                margin-right: -20px;
+            }
+
+            .rightAttr {
+                z-index: 2;
+                width: 781px;
+                height: 252px;
+                background: url(~@/assets/images/pvp/match/rightAttr.png) no-repeat center;
+                background-size: cover;
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                padding: 38px 37px 0 37px;
+            }
+            .toatl{
+                margin-right: 80px;
+            }
+            .heroName{
+                text-align: right;
+                .heroOcc{
+                    margin-right: 0px;
+                    margin-left: 34px;
+                }
+            }
+            .heroAttr{
+                flex-direction: row-reverse;
+            }
+        }
+
+        .heroName {
+            color: #fff;
+            line-height: 1;
+
+            .heroOcc {
+
+                font-size: 48px;
+                margin-right: 34px;
+            }
+
+            .heroLv {
+
+                font-size: 30px;
+            }
+        }
+
+        .heroAttr {
+            margin-top: 65px;
+            flex-wrap: nowrap;
+            display: flex;
+
+            .attrBox {
+                display: flex;
+                flex-direction: column;
+                width: 450px;
+                .attrRow {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    width: 450px;
+                    justify-content: space-between;
+                    padding-right: 30px;
+                }
+
+                .attrItem {
+                    font-size: 24px;
+                    min-width: 140px;
+                    display: flex;
+                    justify-content: space-between;
+                    display: flex;
+                    margin-right: 30px;
+
+                    &:last-of-type {
+                        border-radius: 14px 0 0 14px;
+                        min-width: 100px;
+                    }
+
+                    color: #CFA972;
+
+                    .attrValue {
+                        color: #D5FFFA;
+                    }
+                }
+            }
+
+            .toatl {
+                display: flex;
+                flex-direction: column;
+                line-height: 1;
+                align-items: center;
+                .value {
+
+                    margin-bottom: 8px;
+                    color: #FFE119;
+                    font-size: 48px;
+                }
+
+                .label {
+
+                    font-size: 24px;
+                    color: #CFA972;
+                }
+            }
+        }
+
+
+
+    }
+}

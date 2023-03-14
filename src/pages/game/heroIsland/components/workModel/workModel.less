@@ -1,0 +1,206 @@
+.content {
+    background: url(~@/assets/images/heroIsland/modelBg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1040px;
+    height: 628px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+
+    :global {
+        .comBtn {
+            display: flex;
+            width: 244px;
+            height: 110px;
+            font-size: 36px;
+            color: #FDFFEF;
+            padding-top: 10px;
+            text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .closeImg {
+        position: absolute;
+        top: 1.5%;
+        right: 6%;
+        width: 78px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .HeroImg {
+        width: 441px;
+        height: 539px;
+        margin-top: 10px;
+        z-index: 1;
+    }
+
+    .modalMaskImg {
+        width: 406px;
+        height: 262px;
+        position: absolute;
+        left: 35px;
+        bottom: 45px;
+        z-index: 2;
+    }
+
+    .token {
+
+        // background:linear-gradient( to top,rgba(0,0,0,0.10),rgba(0,0,0,0.01),rgba(0,0,0,0));
+        position: absolute;
+        font-size: 16px;
+        color: #90633F;
+        left: 113px;
+        bottom: 81px;
+        z-index: 3;
+    }
+
+    .rightInfo {
+        padding: 100px 0 0 0;
+        line-height: 1;
+        min-width: 510px;
+
+        .occupation {
+            font-size: 48px;
+            color: #7A5231;
+            text-shadow: 2px 2px #fff6c3, -2px -2px #fff6c3, 2px -2px #fff6c3, -2px 2px #fff6c3;
+
+        }
+
+        .lv {
+            font-size: 30px;
+            color: #FDF2C3;
+            text-shadow: 3px 3px #915B29, -3px -3px #915B29, 3px -3px #915B29, -3px 3px #915B29;
+
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+
+        .bornTime {
+            font-size: 24px;
+            font-weight: 400;
+            color: #7A5231;
+            white-space:nowrap;
+            min-height: 237px;
+        }
+
+        .row2 {
+            font-size: 30px;
+            line-height: 1;
+            color: #7A5231;
+            margin: 40px 0px;
+        }
+
+        .attrBox {
+            background-color: rgba(rgba(173, 140, 99, 0.35));
+            padding: 23px 0px 0px 35px;
+            display: flex;
+            flex-direction: column;
+            font-size: 24px;
+            font-weight: 400;
+            color: #7A5231;
+
+            line-height: 1;
+
+            .attrRow {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+
+                .attrItem {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    padding-right: 35px;
+                    padding-bottom: 20px;
+
+                    // min-width: 260px;
+                    &:first-of-type {
+                        padding-right: 80px;
+                    }
+                }
+            }
+
+
+        }
+
+        .btnRow {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-top: 28px;          
+            .startMining{
+                font-size: 28px;
+            } 
+        }
+    }
+
+
+    .closeContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .closeHeroImg {
+            width: 488px;
+            height: 794px;
+            position: absolute;
+            left: 0;
+            /* top: -140px; */
+            transform: translateX(-100%);
+        }
+
+        .message {
+            width: 700px;
+            font-size: 30px;
+            color: #7A5231;
+            line-height: 60px;
+        }
+
+        .btnRow {
+            margin-top: 90px;
+        }
+
+    }
+
+    @media screen and (max-width: 1000px) {
+        // position: absolute;
+        // left: 50%;
+        // right: 50%;
+        // width:max-content !important;
+        transform: scale(1.5);
+
+    }
+
+    // @media screen and (max-width: 1000px) {
+    //     transform: scale(0.35);
+
+    // }
+}
+:global{
+    .ant-popover{
+        .ant-popover-inner{
+            .ant-popover-message-title{
+                color: #A26F44;
+            }
+            
+        }
+        
+        @media screen and (orientation: portrait) and (max-width: 1000px) {
+            transform-origin: 25% 100% !important;
+            transform: rotate(90deg) scale(0.8) translateX(-50%) !important;
+            top: 420px !important;
+            left: 20px !important;
+            
+        }
+    }
+}

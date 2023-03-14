@@ -1,0 +1,151 @@
+.page{
+    background: url(~@/assets/images/heroUpload/heroUploadBg.png) no-repeat center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .blancesBox {
+        position: absolute;
+        top: 18px;
+        right: 45px;
+        z-index: 50;
+    }
+    .content{
+        .noHero{
+            width: 656px;
+        }
+        .heroImg{
+            width: 656px;
+            height:auto;
+        }
+        .rightBox{
+            background: url(~@/assets/images/heroUpload/rightBoxBg.png) no-repeat center;
+            background-size: 100% 100%;
+            width: 672px;
+            height: 680px;
+            position: relative;
+            .closeImg{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                width: 78px;
+                height: 76px;
+            }
+            .heroSelect{
+                width: 100%;
+                padding:100px 120px 20px;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                .heroBox{
+                    text-align: center;
+                    font-size: 24px;
+                    color: #90633F;
+                    line-height: 48px;
+                    position: relative;
+                    .clearImg{
+                        cursor: pointer;
+                        position: absolute;
+                        width:47px;
+                        height:47px;
+                        top: 6px;
+                        right: 6px;
+                        z-index: 1000;
+                    }
+                
+                }
+            }
+            .info{
+                width: 100%;
+                padding:0 80px;
+                font-size: 20px;
+                color: #90633F;
+                line-height: 28px;
+            }
+            .btnRow{
+                margin-top: -24px;
+                justify-content: center;
+                display: flex;
+                position:absolute;
+                bottom:55px;
+                width:100%;
+                :global {
+                    .comBtn {
+                        padding: 14px 80px 24px;
+                    }
+                }
+                .againBtn{
+                    // width: 244px;
+                    // height: 78px;
+                    padding: 20px 50px 22px;
+                    min-width: 252px;
+                    // width:252px;
+                }
+        
+                .btnBox {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 36px;
+                    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+                    color: #DFFFFF;
+                    align-items: center;
+                    justify-content: center;
+                    line-height: 1;
+        
+                    .price {
+                        font-size: 18px;
+                        margin-right: 10px;
+        
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-height: 1000px) and (min-height: 850px) {
+        .content {
+            transform: translate(-50%, -50%) scale(0.85);
+            top: 50%;
+            left: 50%;
+
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        background-size: cover;
+        .blancesBox {
+            top: 0px;
+            right: 25px;
+        }
+        .content {
+            transform: translate(-50%, -50%) scale(0.35);
+            top: 50%;
+            left: 50%;
+        }
+
+        .topRow {
+            font-size: 26px;
+
+            span {
+                margin-left: 10px;
+            }
+        }
+
+    }
+    @media screen and (min-width: 1950px) {
+        background-size: cover;
+    }
+}
+.pageEn{
+    .content{
+        .rightBox{
+            .btnRow{
+
+                .btnBox{
+                    font-size: 28px;
+                    .price{
+                        margin-top: 5px;
+                    }
+                }
+    
+            }
+        }
+    }
+}

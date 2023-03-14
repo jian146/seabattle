@@ -1,0 +1,16 @@
+export default {
+    'pvp.pool':'Current award pool',
+    'pvp.ranking':'ranking',
+    'pvp.address':'Wallet address',
+    'pvp.victoryField':'Victory field',   
+    'pvp.reward':'Reward',
+    'pvp.seeMmore':'See more rankings',
+    'pvp.map.map0':'Labyrinth Arena',
+    'pvp.map.map1':'Undead Mine',
+    'pvp.map.map2':'Coming soon',
+    'pvp.map.desc0':'A sunken ship under the sea shrouded in fog is suitable for novice heroes who have just embarked on an adventure~',
+    'pvp.map.des1':'A sunken ship under the sea shrouded in fog is suitable for novice heroes who have just embarked on an adventure~',
+    'pvp.map.des2':'A sunken ship under the sea shrouded in fog is suitable for novice heroes who have just embarked on an adventure~',
+    'pvp.matching':'Matching...',
+    'pvp.unmatch':'Unmatch',
+}

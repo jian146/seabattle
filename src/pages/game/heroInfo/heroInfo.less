@@ -1,0 +1,283 @@
+.page {
+    background: url(~@/assets/images/heroInfo/heroInfoBg.png) no-repeat center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .equipBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 96px;
+        height: 96px;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin-bottom: 40px;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: nowrap;
+
+        .leftBox {
+            display: flex;
+            flex-wrap: nowrap;
+
+            .heroImgBox{
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content:center;
+                .heroImg {
+                    width: 465px;
+                    height: 584px;
+                    margin: 0 20px;
+                }
+
+                .token{
+                    display: flex;
+                    align-items: center;
+                    justify-content:space-between;
+                    width: 85%;
+                    background-color:rgba(0, 0, 0, 0.2);
+                    padding:8px 29px;
+                    color: #B2D9F8;
+                    font-size:18px;
+                    .label{
+                        font-size: 30px;
+                        cursor: pointer;
+                    }
+                    .gt{
+                        transform: rotate(90deg);
+                        display: inline-block;   
+                    margin-left: 5px;                 }
+
+                }
+            }
+          
+
+            .equipList {
+                display: flex;
+                flex-direction: column;
+
+                .lockImg {
+                    width: 49px;
+                    height: 50px;
+                }
+
+            }
+        }
+
+        .rightBox {
+            width: 463px;
+            margin-left: 50px;
+
+            .tagRow {
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                .tagItem {
+                    // width: 50%;
+                    width: 211px;
+                    // height: 76px;
+                    cursor: pointer;
+                    background-image: url(~@/assets/images/heroInfo/typeTag.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    font-size: 36px;
+                    color: #FDF7C3;
+                }
+
+                .activeTag {
+                    color: #FDF7C3;
+                    background-image: url(~@/assets/images/heroInfo/activeTypeTag.png);
+                }
+
+                .rightTag {
+                    margin-left: -25px;
+                }
+            }
+
+            .backpack {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 22px 32px  18px;
+                background-color: rgba(0, 0, 0, 0.24);
+
+                .equipBox {
+                    margin-bottom: 13px;
+
+                }
+            }
+
+            .attr {
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.24);
+                position: relative;
+                padding: 40px 30px 20px 30px;
+
+                .row1 {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    margin-bottom: 20px;
+                    :global {
+                        .comLvTag {
+                            position: inherit;
+                            width: 64px;
+                            height: 64px;
+                            font-size: 40px;
+                        }
+                    }
+
+                    .heroName {
+                        font-size: 48px;
+                        margin-right: 10px;
+                        color: #A26F44;
+                        line-height: 1px;
+                        text-shadow: 2px 2px #fff6c3, -2px -2px #fff6c3, 2px -2px #fff6c3, -2px 2px #fff6c3;
+                        // -webkit-text-stroke: 1px #FFF6C3;
+                    }
+
+
+                }
+
+                .attr1Box {
+                    .attr1Row {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+
+                        .attr1Item {
+                            font-size: 24px;
+                            color: #FFF6C3;
+                            line-height: 70px;
+
+                            img {
+                                width: 27px;
+                                height: 30px;
+
+                            }
+
+                            .label {
+                                margin: 0 17px 0 9px;
+                            }
+
+                        }
+                    }
+                }
+
+                .attrBox {
+                    background-color: rgba(1, 1, 1, 0.35);
+
+                    padding: 23px 0px 0px 35px;
+                    margin: 30px 0 0;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 24px;
+                    color: #FFF6C3;
+
+                    line-height: 1;
+
+                    .attrRow {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+
+                        .attrItem {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: nowrap;
+                            justify-content: space-between;
+                            padding-right: 35px;
+                            padding-bottom: 20px;
+
+                            // min-width: 260px;
+                            &:first-of-type {
+                                padding-right: 80px;
+                            }
+                        }
+                    }
+
+
+                }
+
+                .btnRow {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    padding-top: 28px;
+                    justify-content:space-between;
+
+                    :global {
+                        .comBtn {
+                            color: #FFFEEA;
+                            line-height: 25px;
+                            text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+
+                            font-size: 36px;
+                            width: 186px;
+                            height: 72px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+            }
+            .attrEn{
+                // .attr1Box{
+                //     .attr1Row{
+                //         .attr1Item{
+                //             width:50%;
+                //         }
+                //     }
+                // }
+                .attrBox{
+                    padding: 23px 0px 0px 15px;
+                    .attrRow {
+                        .attrItem {
+                            max-width: 200px;
+                            padding-right: 10px;
+                            margin-left: 5px;
+                            &:first-of-type {
+                                margin-left: 0px;
+                                padding-right: 10px;
+                                max-width: 180px;
+                            }
+                        }
+                    }
+                }
+                .btnRow{
+                    :global {
+                        .comBtn {
+                            font-size: 30px;
+                        }
+                    }
+                
+                }
+            }
+        }
+
+    }
+    // 高分辨率电脑
+    @media screen and (min-width: 1950px) {
+        background-size: cover;
+    }
+    @media screen and (max-width: 1000px) {
+        background-size: cover;
+
+        .content {
+            transform: translate(-50%, -50%) scale(0.35);
+            top: 50%;
+            left: 50%;
+        }
+
+  
+
+    }
+}

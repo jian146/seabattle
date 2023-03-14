@@ -1,0 +1,549 @@
+.homePage {
+    // background: url('./assets/image/home/homePageBg.png') no-repeat center ;
+
+    background: url(~@/assets/images/home/homePageBg.png) no-repeat center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .pool {
+        background: url(~@/assets/images/home/poolBg.png) no-repeat center;
+        z-index: 15;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%) scale(1);
+        width: 750px;
+        height: 253px;
+
+        .content {
+            position: absolute;
+            width: 100%;
+            bottom: 12px;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            padding-left: 130px;
+            z-index: 15;
+
+            // justify-content: center;
+            .coinImg {
+                height: auto;
+                margin-right: 14px;
+                margin-bottom: 10px;
+            }
+
+            .poolText {
+                padding: 0 0 15px 0;
+                color: #F4F4F4;
+                font-size: 36px;
+                display: flex;
+                .poolEn{
+                    font-size: 32px;
+                    line-height: 1;
+                    display: flex;
+                    align-items: center;
+                    margin-left: -10px;
+                }
+
+                .poolValue {
+                    color: #F9D130
+                }
+            }
+        }
+
+
+
+        // width:325px;
+        // height: 127px;
+    }
+
+
+    .pvpAnimation {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -75%);
+        width: 125px;
+        height: 125px;
+        // background-color:red;
+
+
+        .hero1,
+        .hero2 {
+            position: absolute;
+            background-size: cover !important;
+            width: 64px;
+            height: 64px;
+        }
+
+        .hero1 {
+            transform: translateX(50%);
+            left: 25%;
+            top: 35%;
+            background: url(~@/assets/images/home/animation/hero/leftHero/1.png) no-repeat;
+            background-size: cover !important;
+            animation-name: hero1-keyframes;
+            animation-duration: 1.2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function:step-start;
+
+            @keyframes hero1-keyframes {
+                0% {
+
+                    background: url(~@/assets/images/home/animation/hero/leftHero/1.png) no-repeat;
+                }
+
+                20% {
+                    background: url(~@/assets/images/home/animation/hero/leftHero/2.png) no-repeat;
+                }
+
+                40% {
+                    background: url(~@/assets/images/home/animation/hero/leftHero/3.png) no-repeat;
+                }
+
+                50% {
+                    background: url(~@/assets/images/home/animation/hero/leftHero/4.png) no-repeat;
+                }
+
+                80% {
+                    background: url(~@/assets/images/home/animation/hero/leftHero/5.png) no-repeat;
+                }
+
+                100% {
+                    background: url(~@/assets/images/home/animation/hero/leftHero/6.png) no-repeat;
+                }
+            }
+        }
+
+        .hero2 {
+            transform: rotateY(180deg) translateX(50%);
+            left: 25%;
+            top: 35%;
+            animation-name: hero2-keyframes;
+            animation-duration: 1.2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function:step-start;
+            background: url(~@/assets/images/home/animation/hero/rightHero/1.png) no-repeat;
+            @keyframes hero2-keyframes {
+                0% {
+                    background: url(~@/assets/images/home/animation/hero/rightHero/1.png) no-repeat;
+                }
+
+                20% {
+                    background: url(~@/assets/images/home/animation/hero/rightHero/2.png) no-repeat;
+                }
+
+                40% {
+                    background: url(~@/assets/images/home/animation/hero/rightHero/3.png) no-repeat;
+                }
+
+                50% {
+                    background: url(~@/assets/images/home/animation/hero/rightHero/4.png) no-repeat;
+                }
+
+                80% {
+                    background: url(~@/assets/images/home/animation/hero/rightHero/5.png) no-repeat;
+                }
+
+                100% {
+                    background: url(~@/assets/images/home/animation/hero/rightHero/6.png) no-repeat;
+                }
+            }
+        }
+    }
+
+    .ship {
+        // background: url(~@/assets/images/home/animation/ship/shiptoTop1.png) no-repeat center;
+        background-size: cover;
+        // background-position: center center;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 18.518518518518517%;
+        left: 52.08333333333334%;
+        transform: translateX(20px);
+        // 3.11
+        animation-name: ship-keyframes;
+        animation-duration: 3.11s;
+        // animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        // background-color: red;
+
+        //demo
+        // bottom: 130px;
+        // left: 955px;
+        // background-image: url(~@/assets/images/home/animation/ship/toBottom8.png);
+
+        @keyframes ship-keyframes {
+            0% {
+                bottom: 18.518518518518517%;
+                left: 52.08333333333334%;
+                background-image: url(~@/assets/images/home/animation/ship/toBottom1.png);
+            }
+
+            4.545454545454546% {
+                bottom: 17.59259259259259%;
+                left: 51.5625%;
+                background-image: url(~@/assets/images/home/animation/ship/toBottom2.png);
+            }
+
+            9.090909090909092% {
+                bottom: 16.666666666666664%;
+                left: 51.041666666666664%;
+                background-image: url(~@/assets/images/home/animation/ship/toBottom3.png);
+            }
+
+            13.636363636363637% {
+                bottom: 15.74074074074074%;
+                left: 50.520833333333336%;
+                background-image: url(~@/assets/images/home/animation/ship/toBottom4.png);
+            }
+
+            18.181818181818183% {
+                bottom: 14.814814814814813%;
+                left: 50%;
+                background-image: url(~@/assets/images/home/animation/ship/toBottom5.png);
+            }
+
+            22.727272727272727% {
+                bottom: 13.88888888888889%;
+                left: 49.47916666666667%;
+                background-image: url(~@/assets/images/home/animation/ship/toBottom6.png);
+            }
+
+            27.272727272727273% {
+                bottom: 12.962962962962962%;
+                left: 48.95833333333333%;
+                background-image: url(~@/assets/images/home/animation/ship/toBottom7.png);
+            }
+
+            31.818181818181817% {
+                bottom: 12.037037037037036%;
+                left: 48.4375%;
+                background-image: url(~@/assets/images/home/animation/ship/toBottom8.png);
+            }
+
+            //转头
+            36.36363636363637% {
+
+                background-image: url(~@/assets/images/home/animation/ship/toBottom1.png);
+            }
+
+            40.90909090909091% {
+
+                background-image: url(~@/assets/images/home/animation/ship/toBottom2.png);
+            }
+
+            45.45454545454545% {
+
+                background-image: url(~@/assets/images/home/animation/ship/toBottom3.png);
+            }
+
+            50% {
+
+                background-image: url(~@/assets/images/home/animation/ship/toBottom4.png);
+            }
+
+            54.54545454545455% {
+
+                background-image: url(~@/assets/images/home/animation/ship/toBottom5.png);
+            }
+
+            59.09090909090909% {
+
+                background-image: url(~@/assets/images/home/animation/ship/toBottom6.png);
+            }
+
+            63.63636363636363% {
+
+                background-image: url(~@/assets/images/home/animation/ship/toBottom7.png);
+            }
+
+            68.18181818181819% {
+
+                background-image: url(~@/assets/images/home/animation/ship/toBottom8.png);
+            }
+
+            //转头结束
+            72.72727272727273% {
+                bottom: 12.962962962962962%;
+                left: 48.95833333333333%;
+                background-image: url(~@/assets/images/home/animation/ship/shiptoTop1.png);
+            }
+
+            77.27272727272727% {
+                bottom: 13.88888888888889%;
+                left: 49.47916666666667%;
+                background-image: url(~@/assets/images/home/animation/ship/shiptoTop2.png);
+            }
+
+            81.81818181818181% {
+                bottom: 14.814814814814813%;
+                left: 50%;
+                background-image: url(~@/assets/images/home/animation/ship/shiptoTop3.png);
+            }
+
+            86.36363636363636% {
+                bottom: 15.74074074074074%;
+                left: 50.520833333333336%;
+                background-image: url(~@/assets/images/home/animation/ship/shiptoTop4.png);
+            }
+
+            90.9090909090909% {
+                bottom: 16.666666666666664%;
+                left: 51.041666666666664%;
+                background-image: url(~@/assets/images/home/animation/ship/shiptoTop5.png);
+            }
+
+            95.45454545454545% {
+                bottom: 17.59259259259259%;
+                left: 51.5625%;
+                background-image: url(~@/assets/images/home/animation/ship/shiptoTop6.png);
+            }
+
+            100% {
+                bottom: 18.518518518518517%;
+                left: 52.08333333333334%;
+                background-image: url(~@/assets/images/home/animation/ship/shiptoTop1.png);
+            }
+
+
+
+        }
+
+    }
+
+    .pageTag {
+
+        position: absolute;
+        z-index: 10;
+        cursor: pointer;
+
+        .tagImg {
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: -100%;
+            z-index: 1;
+        }
+
+        .label {
+            color: #50473D;
+            font-size: 36px;
+            // padding: 16px 20px;
+            padding-bottom: 10px;
+            width: 254px;
+            height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            background: url(~@/assets/images/home/tagBg.png) no-repeat center;
+            background-size: cover;
+            // background: #44443C;
+            position: relative;
+            z-index: 2;
+        }
+        .enLabel{
+            font-size: 28px;
+        }
+
+        .tagImg0 {
+            top: 0;
+            left: 50%;
+            transform: translate(-40%, -85%);
+        }
+
+
+        .tagImg1 {
+            top: 0;
+            left: 50%;
+            transform: translate(-60%, -75%);
+        }
+
+        .tagImg2 {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -66%);
+        }
+
+        .tagImg3 {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -85%);
+        }
+
+        .tagImg4 {
+            top: 0;
+            left: 50%;
+            transform: translate(-65%, -75%);
+        }
+    }
+
+    //海盗船
+    .pirateBoat {
+        // top: 60%;
+        // left: 15%;
+        top: 648px;
+        left: 288px
+    }
+
+    .pve {
+        top: 39%;
+        left: 32%;
+    }
+
+    .pvp {
+        top: 63%;
+        left: 42.5%;
+    }
+
+    .drawCard {
+        top: 44%;
+        left: 51%
+    }
+
+    .heroIsland {
+        top: 44%;
+        left: 73.5%;
+        top: 35%;
+        left: 48.5%;
+    }
+
+    .rightBottom {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+
+        .row{
+            cursor: pointer;
+
+        }
+
+        img {
+            width: 120px;
+            height: 120px;
+
+            cursor: pointer;
+        }
+
+        .imgItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            cursor: pointer;
+        }
+
+        .text {
+            margin-top: -40px;
+            font-size: 30px;
+            color: #F6EEDD;
+            text-shadow: 3px 3px #A15B3F, -3px -3px #A15B3F, 3px -3px #A15B3F, -3px 3px #A15B3F;
+
+        }
+
+        .linkModal {
+            position: absolute;
+            left: -20px;
+            bottom: 50px;
+            z-index: 90;
+            transform: translateX(-100%);
+            width: 620px;
+            height: 189px;
+            font-size: 20px;
+            color: #884111;
+            background: url(~@/assets/images/home/linkModalImg.png) no-repeat center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 0 55px 26px;
+            justify-content: space-between;
+
+            img {
+                width: 38px;
+                height: auto;
+                margin-right: 10px;
+                ;
+            }
+        }
+    }
+
+    @media screen and (max-height: 1000px) {
+        .pool {
+            transform: translate(-50%, -15%) scale(0.7);
+        }
+
+    }
+    @media screen and (min-width: 1950px) {
+        background-size: cover;
+    }
+    @media screen and (max-width: 1000px) {
+        background-size: cover;
+
+        .ship {
+            width: 35px;
+            height: 35px;
+            transform: translateX(0px);
+        }
+
+        .pool {
+            transform: translate(-50%, -30%) scale(0.3);
+        }
+
+        .pageTag {
+            font-size: 14px;
+
+            padding: 8px 10px;
+            transform: scale(0.3);
+
+            .tagImg {
+                width: 100%;
+                height: auto;
+            }
+            .tagImg0 {
+                top: 0;
+                left: 50%;
+                transform: translate(-65%, -85%);
+            }
+        }
+
+        .pirateBoat {
+            top: 60%;
+            left: 0%;
+        }
+        .pve {
+            top: 27%;
+            left: 20%;
+        }
+
+        .pvp {
+            top: 53%;
+            left: 22.5%;
+        }
+
+        .drawCard {
+            top: 49%;
+            left: 42.5%;
+        }
+
+        .heroIsland {
+            top: 27%;
+            left: 56%;
+        }
+
+        .rightBottom {
+            transform: scale(0.35);
+            bottom: auto;
+            right: 0.1%;
+        }
+    }
+
+
+}

@@ -1,0 +1,87 @@
+.head {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    // background: url(~@/assets/images/home/topBg.png) no-repeat center;
+    // width: 100%;
+    // height: 100%;
+    // background-color: rgba(43, 33, 24, 0.87);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 35px;
+    z-index: 90;
+
+    .logo {
+        // height: 50px;
+        margin-right: 38px;
+    }
+
+
+
+    
+
+    .menu {
+
+        display: flex;
+        display: none;
+        font-size: 24px;
+        color: #fff;
+        margin-right: 100px;
+
+        .active {
+            color: #F9D130;
+        }
+
+        .menuItem {
+            cursor: pointer;
+            margin-right: 20px;
+        }
+    }
+
+    .languageSelect {
+        color: #FFFFFF;
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        padding: 4px 0;
+
+        .logo {
+            height: 25px;
+            margin-right: 14px;
+        }
+
+        .menu {
+            font-size: 12px;
+
+            .menuItem {
+                margin-right: 10px;
+            }
+        }
+
+        .languageSelect {
+            font-size: 12px;
+        }
+
+        .button {
+            font-size: 10px;
+            margin-right: 0px;
+        }
+        .action{
+            margin-right: 15px;
+        }
+    }
+
+}
+
+.hide {
+    visibility: hidden;
+    z-index: -1;
+}
+
+.langSmall {
+    font-size: 14px;
+    margin-right: 4;
+}

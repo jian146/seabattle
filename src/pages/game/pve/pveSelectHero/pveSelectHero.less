@@ -1,0 +1,166 @@
+.content {
+    background: url(~@/assets/images/heroIsland/modelBg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1040px;
+    height: 628px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+
+
+    
+
+    .closeImg {
+        position: absolute;
+        top: 1.5%;
+        right: 6%;
+        width: 78px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .closeContent {
+        display: flex;
+        align-items: center;
+        // justify-content:space-between;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+        .message {
+            width: 700px;
+            padding-top: 50px;
+
+            .languageSelect {
+                font-size: 40px;
+                z-index: -1;
+            }
+
+            .selectlV {
+                margin: 0 14px;
+            }
+
+            :global {
+                #selectHero {
+                    .ant-select {
+                        min-width: 200px;
+                        width:max-content;
+                    }
+                }
+                .ant-select-dropdown{
+                    width: max-content !important;
+                    
+                    // min-width: max-content !important;
+                }
+
+                @media screen and (max-width: 1000px) {
+                    .ant-select-dropdown {
+                        top: 150px !important;
+                        left: auto !important;
+                        right: 0px !important;
+                       
+                        
+                    }
+                }
+
+                .ant-select {
+                    color: #7A5231;
+                    font-size: 24px;
+
+                    .ant-select-item-option-content {
+                        .selectlV {
+                            margin: 0 8px;
+                        }
+                    }
+
+                    .ant-select-selector {
+                        background-color: transparent;
+                        padding: 0 4px;
+
+                        .ant-select-selection-item {
+                            padding-right: 50px;
+                            min-width: 50px;
+                            min-height: 20px;
+                        }
+
+                        .ant-select-selection-placeholder {
+                            padding-right: 50px;
+                            color: #7A5231;
+                            text-align: right;
+                        }
+
+                        .ant-select-selection-search-input {
+
+                            ::-webkit-input-placeholder {
+                                /* WebKit browsers */
+                                color: #7A5231 !important;
+                                padding-right: 80px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .row {
+                width: 100%;
+                padding: 20px 25px 20px 20px;
+                background: rgba(144, 99, 63, 0.3);
+                font-size: 30px;
+                color: #7A5231;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 42px;
+
+            }
+
+        }
+
+        .closeHeroImg {
+            width: 488px;
+            height: 794px;
+            position: absolute;
+            left: 0;
+            top: -140px;
+            transform: translateX(-100%);
+        }
+
+        .btnRow {
+            margin-top: -20px;
+        }
+
+    }
+
+    .btnLabel {
+        display: flex;
+        flex-direction: column;
+
+        .price {
+            margin-top: 7px;
+            font-size: 18px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    .option{
+        font-size: 28px;
+        width:max-content;
+        .heroOpaion{
+            width:max-content;
+            display: flex;
+            padding:10px 0px;
+         
+        }
+    }
+    
+    @media screen and (max-width: 1000px) {
+        transform: scale(1.35);
+    }
+}

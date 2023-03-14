@@ -1,0 +1,6 @@
+"vetur.format.defaultFormatterOptions": {
+    "prettier": {
+        "semi": false,
+        "singleQuote": true
+    }
+}

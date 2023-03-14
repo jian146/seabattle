@@ -1,0 +1,271 @@
+.content {
+    background: url(~@/assets/images/pve/pveLogBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1364px;
+    height: 854px;
+    position: relative;
+    // display: flex;
+    flex-wrap: wrap;
+    padding: 0 51px 0 43px;
+
+    :global {
+        .comBtn {
+            display: flex;
+            width: 244px;
+            height: 110px;
+            font-size: 36px;
+            color: #FDFFEF;
+            padding-top: 10px;
+            text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .closeImg {
+        position: absolute;
+        top: -0px;
+        right: 43px;
+        width: 78px;
+        height: 76px;
+        cursor: pointer;
+    }
+
+    .title {
+        font-size: 48px;
+        text-align: center;
+        width: 100%;
+        line-height: 1;
+        padding: 60px 0 37px 0;
+        border-bottom: 1px solid rgba(86, 67, 63, 0.15);
+        color: #956A45;
+        display: inline-block;
+        height: max-content;
+    }
+
+
+
+    .closeContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .closeHeroImg {
+            width: 488px;
+            height: 794px;
+            position: absolute;
+            left: 0;
+            /* top: -140px; */
+            transform: translateX(-100%);
+        }
+
+        .message {
+            width: 700px;
+            font-size: 30px;
+            color: #7A5231;
+            line-height: 60px;
+        }
+
+        .btnRow {
+            margin-top: 90px;
+        }
+
+    }
+
+    .tableBox {
+        width: 100%;
+        min-height: 540px;
+    }
+
+    .logTable {
+        width: 100%;
+        border-collapse: collapse; //表格的边框合并，如果相邻，则共用一个边框。
+        border-spacing: 0px 2px; //设置行与单元格边框的间距。
+        border: none;
+
+        thead {
+            border: none;
+            font-size: 24px;
+            color: rgb(198, 148, 108);
+            line-height: 1;
+
+            th {
+                padding: 23px 0px;
+                border: none;
+
+            }
+
+        }
+
+        tbody {
+            border: none;
+            font-size: 18px;
+            color: #956A45;
+            border-color: none;
+
+
+            // cellspacing:0px;
+            :global {
+                .workHeroClass {
+                    width: 72px;
+                    height: 72px;
+                    margin: 8px 9px 8px 26px;
+
+                    .comLvTag {
+                        transform: scale(0.75);
+
+                        top: -18px;
+                        left: -24px;
+
+                    }
+                }
+            }
+
+            tr {
+                // background-color:rgba(199, 178, 139, 0.68);
+                border: none;
+                // border-radius: 14px;
+                // margin-bottom: 10px;
+                border-bottom: 4px solid rgb(230, 215, 176);
+            }
+
+            td {
+                border: none;
+                background-color: rgba(199, 178, 139, 0.68);
+                margin-bottom: 4px;
+                text-align: center;
+                max-height: 92px;
+
+                &:first-of-type {
+                    border-radius: 14px 0 0 14px;
+                }
+
+                &:last-child {
+                    border-radius: 0 14px 14px 0;
+                }
+            }
+
+            .heroHead {
+                width: 100px;
+            }
+
+            .most {
+                max-width: 420px;
+                width: 420px;
+                text-align: left;
+                padding: 0 12px;
+            }
+
+            .get {
+                padding: 0 12px;
+                max-width: 350px;
+                width: 350px;
+                text-align: center;
+            }
+
+            .stateTd {
+                position: relative;
+                overflow: hidden;
+                min-width: 150px;
+                width: 150px;
+                text-align: center;
+
+                .tag {
+                    top: -2px;
+                    right: -60px;
+                    position: absolute;
+
+                    background-color: #E73C40;
+                    /* 左上角飘带的背景颜色 */
+                    overflow: hidden;
+                    white-space: nowrap;
+
+                    transform: rotate(45deg);
+
+                    /* 飘带的阴影*/
+
+                    .text {
+                        font-size: 18px;
+                        color: #E9C24A;
+                        display: block;
+                        margin: 1px 0;
+                        padding: 5px 60px;
+                        text-align: center;
+
+                    }
+
+                }
+            }
+
+            .win {
+                color: #E74126;
+                font-size: 30px;
+
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.31) 0%);
+                -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
+            }
+
+            .fail {
+                color: #4588C0;
+                font-size: 30px;
+                -webkit-background-clip: text;
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.31) 0%);
+
+                // -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    .paging{
+        display: flex;
+        justify-content:center;
+        padding:10px 0;
+        margin:20px 0 0px;
+    }
+    .VCtext{
+        color: #956A45;
+        font-size: 24px;
+    }
+    .btnRow {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -75px;
+        width: 100%;
+        left:50%;
+        transform: translateX(-50%);
+        :global {
+            .comBtn {
+                font-size: 27px;
+                height: max-content;
+                width: max-content;
+                padding: 20px 28px 28px 28px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1875px) {
+        transform: translate(0, -18%) scale(0.85);
+    }
+    @media screen and (max-height: 1070px) and (min-height: 400px) {
+        transform: translate(0, -18%) scale(0.9);
+    }
+    @media screen and (max-height: 1000px) and (min-height: 400px) {
+        transform: translate(0, -18%) scale(0.8);
+    }
+    @media screen and (max-height: 820px) and (min-height: 400px) {
+        transform: translate(0, -18%) scale(0.7);
+    }
+    @media screen and (max-width: 1000px) {
+        transform: scale(1);
+
+    }
+}

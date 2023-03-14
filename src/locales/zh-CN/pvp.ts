@@ -1,0 +1,16 @@
+export default {
+    'pvp.pool':'当前奖池',
+    'pvp.ranking':'排名',
+    'pvp.address':'钱包地址',
+    'pvp.victoryField':'胜场',   
+    'pvp.reward':'奖励',
+    'pvp.seeMmore':'查看更多排名',
+    'pvp.map.map0':'迷宫竞技场',
+    'pvp.map.map1':'亡灵矿井',
+    'pvp.map.map2':'敬请期待',
+    'pvp.map.desc0':'被迷雾笼罩的海底沉船，适合刚踏上冒险历程的新手 英雄~',
+    'pvp.map.des1':'被迷雾笼罩的海底沉船，适合刚踏上冒险历程的新手 英雄~',
+    'pvp.map.des2':'被迷雾笼罩的海底沉船，适合刚踏上冒险历程的新手 英雄~',
+    'pvp.matching':'正在匹配中...',
+    'pvp.unmatch':'取消匹配',
+}

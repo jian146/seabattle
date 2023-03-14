@@ -1,0 +1,271 @@
+.choseHeroModel {
+    :global {
+
+        .ant-modal-mask {
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+
+        .ant-modal {
+            display: flex;
+            justify-content: center;
+        }
+
+        .ant-select {
+            // border: 1px solid #C39A77;
+            border-radius: 8px;
+
+            color: #90633F;
+            font-size: 24px;
+            // min-width: 120px;
+
+            .ant-select-selector {
+                background-color: transparent;
+                // border-color: #C39A77;
+                padding: 0 4px;
+
+                .ant-select-selection-item {
+                    padding-right: 28px;
+                }
+            }
+        }
+
+        .ant-input-number{
+            padding: 0 0px;
+            font-size: 18px;
+            color: #90633F;
+            height: 75px;
+            border: none;
+            background: rgba(20, 8, 4, 0.15);
+            border-radius: 12px;
+            
+            width: 100%;
+            .ant-input-number-input-wrap{
+                width: 100%;
+                height: 100%;
+                .ant-input-number-input{
+                    width: 100%;
+                    height: 100%;
+                    text-align: right;
+                }
+            }
+        }
+        .ant-input {
+
+            padding: 0 14px;
+            font-size: 18px;
+            color: #90633F;
+            height: 75px;
+            border: none;
+            background: rgba(20, 8, 4, 0.15);
+            border-radius: 12px;
+            text-align: right;
+        }
+
+    }
+
+    .content {
+        background: url(~@/assets/images/com/choseHeroModal.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 609px;
+        height: 710px;
+        overflow: hide;
+        padding: 40px 60px;
+        position: relative;
+
+
+        .head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #B89669;
+            padding-bottom: 18px;
+            color: #956A45;
+            font-size: 48px;
+            margin-bottom: 28px;
+
+            .closeImg {
+                position: absolute;
+                top: 5px;
+                right: 15px;
+                width: 78px;
+                height: 76px;
+
+            }
+
+            .selectIcon {
+                font-size: 24px;
+                margin-left: 4px;
+            }
+
+
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            :global{
+                .ant-input-number-group-wrapper{
+                    width: 100%;
+                }
+                .ant-input-number-group-addon{
+                    color: #90633F;
+                    background: rgba(20, 8, 4, 0.15);
+                    padding: 0 14px;
+                    border:none;
+                    // border-top:none;
+                    // border-right:none;
+                    // border-bottom:none;
+                    // border-left: 2px solid #C6946C;
+                    font-size: 18px;
+                    cursor: pointer;
+                    border-radius: 0 12px 12px 0;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        width: 1px;
+                        background-color: #B89669;
+                        height: 50%;
+                        position: absolute;
+                        left: 0px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+            .row1 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                color: #C6946C;
+                font-size: 18px;
+                margin-bottom: 10px;
+
+
+                .infoRow {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 11px;
+                }
+
+                .bnbIcon {
+                    width: 44px;
+                    margin-right: 6px;
+                }
+
+                .coin {
+
+                    font-size: 24px;
+                    color: #90633F;
+                }
+
+            }
+
+        }
+
+        .bottomIcon {
+            cursor: pointer;
+            width: 42px;
+            margin: 45px 0 30px;
+        }
+
+        .slipPoint {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            line-height: 1;
+            justify-content: space-between;
+            padding: 22px 0 35px 0;
+            font-size: 24px;
+            color: #90633F;
+            .slider{
+                width: 100%;
+                padding:0 20px;
+                :global{
+                    .ant-slider-handle{
+                        border-color:#90633F ;
+                    }
+                    .ant-slider-track{
+                        background-color: #C6946C;
+                    }
+                    .ant-slider:hover .ant-slider-track {
+                        background-color: #C6946C;
+                    }
+                }
+            }
+            .label{
+                white-space: nowrap;
+            }
+        }
+
+        .btnRow {
+            :global {
+                .comBtn {
+                    width: 189px;
+                    // height:64px;
+                    text-align: center;
+                    // height:57px;
+                    padding: 22px 16px 28px 16px;
+                    color: #FFFCA7;
+                    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+                    font-size: 27px;
+                }
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 1000px) {
+    .choseHeroModel{
+        .content{
+            transform: scale(1.4);
+            .row{
+                .row1{
+                    font-size: 28px;
+                    .bnbIcon {
+                        width: 54px;
+                        margin-right: 6px;
+                    }
+                    .coin{
+                        font-size: 32px;
+                    }
+                }
+            }
+            .bottomIcon {
+                width: 52px;
+                margin: 40px 0 30px;
+            }
+            .slipPoint {
+                padding: 8px 0 8px 0; 
+                visibility: hidden;
+            }
+        }
+        
+    }
+
+    :global{
+        .ant-input-number{
+            padding: 0 0px;
+            
+            height: 75px;
+            border-radius: 12px;
+            input{
+                font-size: 32px !important;
+            }
+        }
+        .ant-input {
+            padding: 0 14px;
+            font-size: 32px !important;
+            height: 75px;
+            border: none;
+            border-radius: 12px;
+            text-align: right;
+        }
+        .ant-input-number-group-addon{
+            font-size: 32px !important;
+        }
+
+    }
+}

@@ -1,0 +1,209 @@
+.heroCard {
+    background: url(~@/assets/images/hero/heroCardBg.png) no-repeat center;
+    background-size: cover;
+    width: 304px;
+    height: 414px;
+    position: relative;
+    
+    :global {
+        .comLvTag {
+            z-index: 2;
+            // left: 5px;
+            // top: 5px;
+            width: 76px;
+            height: 76px;
+            font-size: 32px;
+            top: -23px;
+            left: -23px;
+        }
+    }
+
+    // .heroOccupation {
+    //     font-size: 36px;
+    //     font-family: ACGN-SetoPopGB-Flash;
+    //     font-weight: 700;
+    //     color: #9B7D5E;
+    //     opacity: 0.39;
+    //     position: absolute;
+    //     top: 55px;
+    //     right: 60px;
+    // }
+
+    .occupationIcon {
+        background: url(~@/assets/images/hero/iconBg.png) no-repeat center;
+        background-size: cover;
+        width: 63px;
+
+        height: 63px;
+        position: absolute;
+        top: 2px;
+        right: 10px;
+
+        img {
+            width: 44px;
+            height: 44px;
+        }
+    }
+
+    .heroImgBox{
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        top: 10px;
+        left: 10px;
+        overflow: hidden;
+        // padding:10px 15px 10px 15px;
+    }
+    .HeroImg {
+        width: 370px;
+        position: absolute;
+        // top: 50px;
+        left: 48%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    .MantleImg {
+        position: absolute;
+        left: 50%;
+        bottom: 15px;
+        transform: translateX(-50%);
+        z-index: 3;
+        width: 100%;
+        padding: 0 8px;
+    }
+    //新蒙层
+    .Mantle{
+
+        width: 90%;
+         height: 90%;
+        position:absolute;
+        top:10px;
+        left:10px;
+        z-index:-2;
+        background: #E2E2C8;
+        
+    }
+    .pirateMantle{
+        background: linear-gradient(90deg, #FF8177, #FF867A, #FF8C7F, #F99185, #CF556C, #B12A5B) !important;
+    }
+
+    .description{
+        padding: 12px 8px;
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        transform: translateX(-50%);
+        z-index: 4;
+        width: 74%; 
+        color: #fff;
+        font-size: 18px;
+        .lightingColor{
+            color:rgba(255, 233, 88, 1);
+        }
+    }
+    .attrBox {
+        // background-color: rgba(155, 125, 94, 0.26);
+        padding: 12px 8px;
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        transform: translateX(-50%);
+        z-index: 4;
+        width: 74%;
+
+        .attrRow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            line-height: 1;
+            .attrItem {
+
+                font-size: 18px;
+                // -webkit-text-stroke-width: 1.5px;
+                // -webkit-text-stroke-color: #85513B;
+
+                // color: #D4BF95;
+                // color:#85513B
+                color:#fff;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        width: 188px;
+        height: 252px;
+
+        top:30px;
+        // .heroOccupation{
+        //     font-size: 16px;
+        // }
+        .occupationIcon {
+            width: 32px;
+
+            height: 32px;
+            position: absolute;
+            // top: 17.5px;
+            // right: 17.5px;
+            top: 1px;
+            right: 5px;
+            img {
+                width: 22px;
+                height: 22px;
+            }
+        }
+
+        .HeroImg {
+            width: 210px;
+            // top: 25px;
+        }
+
+        .lvImg {
+            width: 64px;
+            left: -9px;
+            top: -9px;
+        }
+
+        :global {
+            .comLvTag {
+                z-index: 2;
+                // left: 5px;
+                // top: 5px;
+                top: -11.5px;
+                left: -11.5px;
+                font-size: 18px;
+                width: 39px;
+                height: 39px;
+                padding: 0 3px 4px 0;
+            }
+        }
+
+        .MantleImg {
+            bottom: 7.5px;
+        }
+
+        .description{
+            padding: 12px 0px;
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            transform: translateX(-50%);
+            z-index: 4;
+            width: 74%;
+            color: #fff;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        .attrBox {
+            bottom: 20px;
+
+            .attrRow {
+                .attrItem {
+                    // -webkit-text-stroke-width: 0.8px;
+                    font-size: 14px;
+                }
+            }
+
+        }
+    }
+}
